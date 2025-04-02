@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About – OnTap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">OnTap</a>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'shop' %}">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'pricing' %}">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link active" href="{% url 'about' %}">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        <li class="nav-item"><a class="btn btn-outline-light ms-2" href="#">Sign Up</a></li>
+
+</ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Section -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h1 class="text-center fw-bold mb-4">About OnTap</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="lead">At OnTap, we’re reimagining how professionals connect in a digital-first world.</p>
+        <p>We created OnTap to simplify and elevate the way people share their personal and professional details. Whether you’re at a networking event, a meeting, or a casual coffee chat — our smart cards ensure your first impression is unforgettable.</p>
+        <p>With our multi-format approach — NFC, QR, Widgets, and even USSD — we ensure anyone, anywhere, can connect with you in seconds. Our cards are eco-friendly, one-time purchases, and fully customizable.</p>
+      </div>
+      <div class="col-md-6">
+        <h5 class="fw-bold">What We Stand For</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">💡 Simplicity & Innovation</li>
+          <li class="list-group-item">🌱 Eco-conscious design</li>
+          <li class="list-group-item">📱 Universal accessibility (smart or feature phones)</li>
+          <li class="list-group-item">💼 Empowering professionals & teams</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="text-center py-5">
+  <div class="container">
+    <h4 class="fw-bold mb-3">Join the new era of networking</h4>
+    <p>Thousands are already using OnTap to grow their brands, meet new clients, and simplify their hustle.</p>
+    <a href="shop.html" class="btn btn-primary mt-3">Get Your Smart Card</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2025 OnTap. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

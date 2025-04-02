@@ -1,0 +1,518 @@
+
+
+
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">OnTap</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+        <li class="nav-item"><a class="nav-link active " href="{% url 'shop'%}">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'pricing' %}">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+
+
+        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        <li class="nav-item"><a class="btn btn-outline-light ms-2" href="#">Sign Up</a></li>
+
+      </ul>
+        
+     
+    </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Shop Header -->
+<section class="shop-hero text-white py-5" style="background: linear-gradient(135deg, #1aaed9, #13c1a7);">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Text Column -->
+      <div class="col-md-6 text-center text-md-start">
+        <h2 class="fw-bold">Networking made simple.</h2>
+        <p class="lead mb-4">
+          Just tap your card on a phone to share your digital business card, save new contacts and stay in touch.
+        </p>
+        <p>
+          Effortlessly share your digital business card by tapping it on any smartphone. Stay connected and manage your contacts seamlessly.
+        </p>
+      </div>
+
+      <!-- Right Image Column 
+      <div class="col-md-6 text-center">
+      <div class="card-stack position-relative d-flex justify-content-center mt-5">
+
+        <img src="{% static 'assets/img/stacked cards/noise.png' %}" class="stacked-card position-absolute card-1" alt="Card 1">
+        <img src="{% static 'assets/img/stacked cards/noise1.png' %}" class="stacked-card position-absolute card-2" alt="Card 2">
+        <img src="{% static 'assets/img/stacked cards/noise2.png' %}" class="stacked-card position-absolute card-3" alt="Card 3">
+      
+      </div>
+      
+    </div>
+  </div>
+  -->
+</section>
+
+
+
+      <div class="container py-5">
+        <h2 class="text-center fw-bold mb-5">Choose Your Plan</h2>
+        <div class="row g-4 justify-content-center">
+          
+          <!-- Pricing Card -->
+          <div class="col-md-3">
+            <div class="d-flex flex-column h-100 p-4 rounded shadow-sm border text-center">
+              <h5 class="fw-bold">Swift</h5>
+              <h2 class="fw-bold mb-0">$19<span class="text-muted fs-6">/mo</span></h2>
+              <hr>
+              <ul class="list-unstyled text-start flex-grow-1">
+                <li>✔️ Tap to share via NFC</li>
+                <li>✔️ Built-in QR code</li>
+                <li>✔️ Customize your name, title, phone, email & socials</li>
+                <li>✔️ Works on Android & iOS</li>
+              </ul>
+              <a href="#" class="btn btn-success mt-auto">Get started</a>
+            </div>
+          </div>
+      
+          <!-- Pricing Card -->
+          <div class="col-md-3">
+            <div class="d-flex flex-column h-100 p-4 rounded shadow-sm border text-center">
+              <h5 class="fw-bold">Elite</h5>
+              <h2 class="fw-bold mb-0">$29<span class="text-muted fs-6">/mo</span></h2>
+              <hr>
+              <ul class="list-unstyled text-start flex-grow-1">
+                <li>✔️ Premium plastic finishes (Gold, Black, or Silver)</li>
+                <li>✔️ Custom logo or design</li>
+                <li>✔️ Scratch-resistant & waterproof</li>
+                <li>✔️ NFC + QR code embedded</li>
+                <li>✔️ Update info anytime</li>
+              </ul>
+              <a href="#" class="btn btn-success mt-auto">Get started</a>
+            </div>
+          </div>
+      
+          <!-- Pricing Card -->
+          <div class="col-md-3">
+            <div class="d-flex flex-column h-100 p-4 rounded shadow-sm border text-center">
+              <h5 class="fw-bold">Signature</h5>
+              <h2 class="fw-bold mb-0">$49<span class="text-muted fs-6">/mo</span></h2>
+              <hr>
+              <ul class="list-unstyled text-start flex-grow-1">
+                <li>✔️ NFC + Email Signature Combo</li>
+                <li>✔️ NFC card included</li>
+                <li>✔️ Pro-designed email signature</li>
+              </ul>
+              <a href="#" class="btn btn-success mt-auto">Get started</a>
+            </div>
+          </div>
+      
+          <!-- Pricing Card -->
+          <div class="col-md-3">
+            <div class="d-flex flex-column h-100 p-4 rounded shadow-sm border text-center">
+              <h5 class="fw-bold">Teams</h5>
+              <h2 class="fw-bold mb-0">$49<span class="text-muted fs-6">/mo</span></h2>
+              <hr>
+              <ul class="list-unstyled text-start flex-grow-1">
+                <li>✔️ Bulk pricing</li>
+                <li>✔️ Team dashboard access</li>
+                <li>✔️ CRM integration support</li>
+                <li>✔️ Admin control for updates & analytics</li>
+              </ul>
+              <a href="#" class="btn btn-success mt-auto">Get started</a>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+
+
+
+<!-- Discover the Future Section -->
+      <section class="networking-discovery py-5">
+        <div class="container">
+          <!-- Title -->
+          <h2 class="text-center fw-bold mb-5">
+            Discover the Future of Networking with <br>
+            <span class="text-dark">OnTap Digital Business Cards</span>
+          </h2>
+      
+          <!-- Feature Cards -->
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="p-4 rounded shadow-sm h-100 feature-card bg-white">
+                <h6 class="fw-bold">OnTap Swift: Smart, Simple, and Ready to Share</h6>
+                <p class="mb-0">Tap to share your details effortlessly with NFC and QR code technology.</p>
+              </div>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="p-4 rounded shadow-sm h-100 feature-card bg-light-orange">
+                <h6 class="fw-bold">Choose Your Perfect OnTap Card for Effortless Connections</h6>
+                <p class="mb-0">Our OnTap cards offer seamless sharing and customization for every professional.</p>
+              </div>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="p-4 rounded shadow-sm h-100 feature-card bg-white">
+                <h6 class="fw-bold">OnTap Elite: Premium Design for the Discerning Professional</h6>
+                <p class="mb-0">Crafted with high-quality materials, these cards make a lasting impression.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+
+<!-- Transform Your Networking Experience Section -->
+<section class="networking-transform py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Text Content -->
+      <div class="col-md-6 mb-4 mb-md-0  ">
+        <h2 class="fw-bold mb-3">
+          Transform Your <br>
+          <span class="text-highlight ">Networking Experience</span><br>
+          with OnTap
+        </h2>
+        <p class="mb-4">
+          OnTap digital business cards offer seamless sharing and endless customization. 
+          Elevate your networking game and ensure your contact details are always up-to-date.
+        </p>
+
+        <div class="d-flex mb-4">
+          <div class="me-5">
+            <h4 class="fw-bold">100%</h4>
+            <p class="mb-0 small">Share your info with just a tap.</p>
+          </div>
+          <div>
+            <h4 class="fw-bold">Customizable</h4>
+            <p class="mb-0 small">Personalize your card to reflect your brand.</p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-dark">Learn More</a>
+          <a href="#" class="btn btn-primary">Sign Up</a>
+        </div>
+      </div>
+
+      <!-- Phone Image -->
+      <div class="col-md-6 text-center">
+        <img src="{% static 'assets/img/Placeholder Image.png' %}" alt="OnTap Mobile Preview" class="img-fluid" style="max-height: 420px;">
+      </div>
+
+
+<!-- Success Metrics Section -->
+<section class="success-metrics py-5 bg-light mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Title Column -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="fw-bold">
+          Our Success Metrics:<br>
+          <span class="d-block">Proven Results That Speak Volumes</span>
+        </h2>
+      </div>
+
+      <!-- Right Content Column -->
+      <div class="col-md-6">
+        <p>
+          Join the growing community of satisfied users who trust OnTap cards.
+          With over 1000 smart cards issued, our innovative solution is transforming networking.
+        </p>
+
+        <div class="d-flex flex-wrap gap-4 mt-4">
+          <div>
+            <h3 class="fw-bold mb-0">1000+</h3>
+            <p class="mb-0 small">Smart cards issued and counting</p>
+          </div>
+          <div>
+            <h3 class="fw-bold mb-0">100%</h3>
+            <p class="mb-0 small">Happy clients who love our service</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Image Section -->
+<section class="image-highlight py-5">
+  <div class="container text-center">
+    <img src="{% static 'assets/img/QR Code.png' %}" alt="" class="img-fluid rounded shadow">
+  </div>
+</section>
+
+
+
+<!-- Discover Sharing Section -->
+<section class="seamless-sharing-section py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">
+      Discover the seamless way to share <br> your digital business card.
+    </h2>
+
+    <div class="row text-center g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="p-4 d-flex flex-column h-100 border rounded-4 shadow-sm">
+          <div class="mb-3">
+            <i class="bi bi-box" style="font-size: 2rem;"></i>
+          </div>
+          <h5 class="fw-bold">Effortlessly connect with others using NFC and QR code technology.</h5>
+          <p class="mb-3 small">
+            With just a tap or scan, your contact information is instantly shared.
+          </p>
+          <a href="#" class="text-decoration-none fw-semibold">Learn More &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="p-4 d-flex flex-column h-100 border rounded-4 shadow-sm">
+          <div class="mb-3">
+            <i class="bi bi-box" style="font-size: 2rem;"></i>
+          </div>
+          <h5 class="fw-bold">Your information is secure and easily updatable at any time.</h5>
+          <p class="mb-3 small">
+            No data is stored on the card, ensuring your privacy.
+          </p>
+          <a href="#" class="text-decoration-none fw-semibold">Sign Up &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="p-4 d-flex flex-column h-100 border rounded-4 shadow-sm">
+          <div class="mb-3">
+            <i class="bi bi-box" style="font-size: 2rem;"></i>
+          </div>
+          <h5 class="fw-bold">Share your portfolio, projects, and more with a single tap.</h5>
+          <p class="mb-3 small">
+            Your digital card is compatible with all smartphones on the market.
+          </p>
+          <a href="#" class="text-decoration-none fw-semibold">Get Started &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- FAQ Section -->
+<section class="faq-section py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">FAQs</h2>
+    <p class="text-center mb-4">Find answers to your questions about OnTap digital business cards.</p>
+
+    <div class="accordion mx-auto" id="faqAccordion" style="max-width: 700px;">
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1-heading">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+            Is my info safe?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Absolutely! Your information is not stored on the card itself. We prioritize your privacy and security.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+            Is there a subscription?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            No subscription is required for basic usage. However, premium features are available through subscription plans. Choose what suits your needs!
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+            Can I update information?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, you can easily update your information anytime through our online platform.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq4-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+            What can I share?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can share as much or as little as you wish—contact details, portfolio, projects, multimedia, and more.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq5-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+            Will it work everywhere?
+          </button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, OnTap cards are compatible with all iPhones and Android devices.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Still Have Questions -->
+<div class="text-center mt-5 pt-4 faq-cta">
+  <h4 class="fw-bold">Still have questions?</h4>
+  <p class="mb-3">We’re here to help!</p>
+  <a href="{% url 'contact' %}" class="btn btn-outline-dark">Contact</a>
+</div>
+
+</section>
+</section>
+
+
+
+
+
+
+<!-- Features Section -->
+<section class="features-section py-5">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+
+      <!-- Left Column -->
+      <div class="col-md-4">
+        <p class="text-uppercase small text-muted">Innovative</p>
+        <h3 class="fw-bold">Explore the Cutting-Edge Features of OnTap</h3>
+        <p class="text-muted">
+          OnTap cards revolutionize networking with seamless sharing capabilities.
+          Experience the convenience of NFC technology and QR codes for effortless connections.
+        </p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="btn btn-outline-dark btn-sm">Learn More</a>
+          <a href="#" class="btn btn-link btn-sm text-decoration-none">Sign Up <span>&#10132;</span></a>
+        </div>
+      </div>
+
+      <!-- Right Column: Feature Icons -->
+      <div class="col-md-8">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="icon-box">
+              <img src="{% static 'assets/img/Relume.png' %}" alt="NFC Icon" class="feature-icon mb-3">
+              <h5 class="fw-bold">NFC Tap for Instant Connections</h5>
+              <p class="text-muted">Simply tap to share your contact details instantly.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="icon-box">
+              <img src="{% static 'assets/img/Relume.png' %}" alt="QR Code Icon" class="feature-icon mb-3">
+              <h5 class="fw-bold">Customizable QR Code for Enhanced Branding</h5>
+              <p class="text-muted">Personalize your QR code with logos and colors.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="icon-box">
+              <img src="{% static 'assets/img/Relume.png' %}" alt="Widget Icon" class="feature-icon mb-3">
+              <h5 class="fw-bold">Widget Integration for Easy Sharing</h5>
+              <p class="text-muted">Utilize the OnTap widget for quick access.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="icon-box">
+              <img src="{% static 'assets/img/Relume.png' %}" alt="USSD Icon" class="feature-icon mb-3">
+              <h5 class="fw-bold">USSD Access for Enhanced Functionality</h5>
+              <p class="text-muted">Access your contact details via USSD for convenience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+<!-- Bootstrap 5 Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+<script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+<script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+<script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+
+<!-- Main JS File -->
+<script src="{% static 'assets/js/main.js'%}"></script>
+
+

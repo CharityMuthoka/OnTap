@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OnTap | {{ title }}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+ 
+
+  <!-- Main Content -->
+  {% block content %}{% endblock %}
+
+  <!-- Footer -->
+<footer class="footer-custom pt-5" style="background-color: #17AE9E; color: #fff;">
+  <div class="container">
+    <div class="row gy-4 justify-content-between text-md-start">
+      
+
+
+      <!-- Logo and About -->
+      <div class="col-md-4">
+        <img src="{% static 'assets/img/image1.jpg' %}" alt="Logo" height="50" class="mb-2">
+        <h5 class="fw-bold">OnTap</h5>
+        <p class="small">We are here to support you every step of the way.</p>
+
+        <!-- App Download Buttons -->
+        <div class="mt-3">
+          <p class="mb-2 fw-bold">Get the app:</p>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#"><img src="{% static 'assets/img/appstore.png' %}" alt="App Store" height="20"></a>
+            <a href="#"><img src="{% static 'assets/img/googleplay.png' %}" alt="Google Play" height="20"></a>
+            <a href="#"><img src="{% static 'assets/img/appgallery.png' %}" alt="App Gallery" height="20"></a>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Product Links -->
+      <div class="col-md-2">
+        <h6 class="fw-bold">About</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Company</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Leadership</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Jobs-Hiring!</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Press</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Investors</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2">
+        <h6 class="fw-bold">Solutions</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">At School</a></li>
+          <li><a href="#" class="text-white text-decoration-none">At Work</a></li>
+          <li><a href="#" class="text-white text-decoration-none">At Home</a></li>
+          
+        </ul>
+      </div>
+
+
+
+
+       <!-- Resources -->
+       <div class="col-md-2">
+        <h6 class="fw-bold">Resources</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Study with Kurtis</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Kurtis Certified</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Help Center</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Library</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Safety Center</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- Terms -->
+      <div class="col-md-2">
+        <h6 class="fw-bold">Terms of Use</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-white text-decoration-none">How It Works</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Get Started</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-dark my-4">
+    <div class="text-center small">&copy; 2025 <strong>OnTap</strong>. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+<script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+<script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+<script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+
+<!-- Main JS File -->
+<script src="{% static 'assets/js/main.js'%}"></script>
+
+
+</html>
